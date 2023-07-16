@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dperezS7.vistas.registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text ="VENTANA DE REGISTRO" FontSize="20" HorizontalTextAlignment="CENTER" TextColor="Blue"/>
+            <Entry x:Name="txtNombre" Placeholder="Ingrese el nombre" PlaceholderColor="Red"/>
+            <Entry x:Name="txtUsuario" Placeholder="Ingrese el usuario" PlaceholderColor="Red"/>
+            <Entry x:Name="txtContraseña" Placeholder="Ingrese la contraseña" PlaceholderColor="Red"/>
+            <Button x:Name="btnInsertar" Text="INSERTAR" Clicked="btnInsertar_Clicked" BackgroundColor="Aquamarine"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

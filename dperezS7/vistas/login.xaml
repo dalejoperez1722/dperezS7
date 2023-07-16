@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dperezS7.vistas.login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text ="VENTANA DE LOGIN" FontSize="24" HorizontalTextAlignment="CENTER" TextColor="Blue"></Label>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="USUARIO" FontSize="20" Grid.Row="0" Grid.Column="0" TextColor="Blue"/>
+                <Label Text="CONTRASEÑA" FontSize="20" Grid.Row="1" Grid.Column="0" TextColor="Blue"/>
+                <Entry x:Name="txtUsuario" Placeholder="Ingrese el usuario" PlaceholderColor="red" Grid.Row="0" Grid.Column="1"/>
+                <Entry x:Name="txtContraseña" Placeholder="Ingrese la contraseña " PlaceholderColor="Red" Grid.Row="1" Grid.Column="1"/>
+                <Button x:Name="btnIniciar" Text="INICIAR SESION" Clicked="btnIniciar_Clicked" Grid.Row="2" Grid.Column="0" BackgroundColor="Aquamarine"/>
+                <Button x:Name="btnRegistro" Text="REGISTRO" Clicked="btnRegistro_Clicked" Grid.Row="2" Grid.Column="1" BackgroundColor="Aquamarine"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
